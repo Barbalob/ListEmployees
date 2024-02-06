@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.menu{
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 12px var(--glow);
+    &__wrapper{
+        padding:$padding;
+        width: $width;
+        height: 90px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+}
+
+@media (max-width:849px) {
+    .menu{
+        &__wrapper{
+            padding:$paddingMobile;
+            width: 100%;
+            height:54px;
+        }
+        .logo{
+            width: 52px;
+        }
+        &__info{
+                p{
+                    display: none;
+                }
+        }
+        .react-switch-bg{
+            width: 100px;
+        }
+    }
+}
+

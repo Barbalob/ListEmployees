@@ -1,0 +1,114 @@
+@import '../../variables.scss';
+
+.selected{
+    width: 100vw;
+    background-color:var(--lightSecondColor);
+    h2{
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &-wrapper{
+        width: $width;
+        padding-left: 4px;
+        padding-right:17px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin: 0 auto;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        // height: 71px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    &-filters{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        &-list{
+            display: flex;
+            gap: 24px;
+            &-item{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                display: flex;
+                align-items:center;
+                gap: 10px;
+                padding: 10px;
+                border-radius:5px;
+                background-color:var(--lightMainColor);
+                button{
+                    height: 10px;
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+    &-btn{
+        padding: 12px 48px;
+        border-radius:5px;
+        background-color: rgb(21, 93, 164);
+        color:rgba(255, 255, 255, 1);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        text-align: left;   
+    }
+}
+
+@media (max-width:849px) {
+    .selected{
+        width: 100%;
+        background-color:var(--lightSecondColor);
+        h2{
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        &-wrapper{
+            width: 100%;
+            padding:$paddingMobile;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            flex-direction: column;
+            // min-height: 229px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &-filters{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: start;
+            gap: 12px;
+            margin-bottom: 16px;
+            &-list{
+                flex-wrap: wrap;
+                gap: 16px;
+                &-item{
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+        }
+        &-btn{
+            padding: 6px 111px;
+            border-radius:4px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

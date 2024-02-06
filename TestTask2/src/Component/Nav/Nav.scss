@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.nav-main{
+    width: $width;
+    padding:$padding;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:var(--greyColor);
+    margin-bottom: 16px;
+    a{
+        color:var(--greyColor);
+    }
+}   
+
+@media (max-width:849px) {
+    .nav-main{
+        width: 100%;
+        padding:$paddingMobile;
+        height: 44px;
+        gap: 9px;
+        font-size: 12px;
+        line-height: 14px;     
+        .arrow{
+            width: 12px;
+        }
+    }   
+}

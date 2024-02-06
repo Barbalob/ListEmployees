@@ -1,0 +1,25 @@
+
+$width:1584px;
+$padding: 0 12px;
+$paddingMobile: 0 24px;
+
+:root {
+--greyColor: rgb(176, 176, 176);
+--lightMainColor: rgb(255, 255, 255);
+--lightSecondColor: rgb(242, 242, 242);
+--colorText:rgba(41, 41, 41, 1);
+--glow:rgba(57, 113, 164, 0.25);
+--colorBorderMenu:rgb(21, 93, 164);
+}
+
+[dark]{
+    --lightMainColor: rgba(41, 41, 41, 1);
+    --lightSecondColor:rgba(62, 62, 62, 1);
+    --colorText:rgba(245, 245, 245, 1);
+    --glow:rgba(0, 0, 0, 0.1);
+}
+
+body{
+    color:var(--colorText);
+    background:var(--lightMainColor);
+}
