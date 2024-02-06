@@ -52,7 +52,7 @@ const User:FC<{
         <>
             {error ?
             <div style={{textAlign:'center', padding:10, display:'flex', flexDirection:'column', alignItems:'center', gap:10}}>
-                Не удалось загрузить данные пользователся
+                Не удалось загрузить данные пользователя
                 <button onClick={()=>{navigate('/')}} style={{padding:'10px 20px', borderRadius:5, width:150}}>Вернуться назад</button>
             </div>
             :

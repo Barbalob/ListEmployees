@@ -49,7 +49,6 @@ function App() {
     getUsers(1,options).then((response)=>{
       setPage(2)
       setUserList(response.data)
-      console.log(response.data);
       if (response.data.length < 10){
         if (response.data.length === 0){
           setNoData(true)
